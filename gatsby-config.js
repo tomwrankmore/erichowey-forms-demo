@@ -15,7 +15,7 @@ module.exports = {
     socialLinks: [
       {
         name: `Email`,
-        link: `eric@erichowey.dev`,
+        link: `tomwrankmore@gmail.com`,
         location: `footer`, //Options are "all", "header", "footer"
       },
       {
@@ -79,7 +79,7 @@ module.exports = {
         // sanityProjectListTitle: "Projects"
         // sanityDisplayProjectListTitle: true
         // useSanityTheme: false // Experimental right now
-        sanityProjectId: "p9a6h8j1",
+        sanityProjectId: "izhcekqp",
       },
     },
 
