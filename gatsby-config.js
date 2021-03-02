@@ -1,10 +1,15 @@
+// import dotenv from 'dotenv';
+
+// const path = require(`path`);
+// dotenv.config({ path: '.env' });
+
 module.exports = {
   siteMetadata: {
     title: `Catalyst Sanity`,
     description: `Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Theme-UI. Incorporates gatsby-theme-catalyst-core, gatsby-theme-catalyst-header-top, and gatsby-theme-catalyst-footer.`,
     keywords: [`gatsby`, `theme`, `react`],
     author: `Eric Howey`,
-    siteUrl: `https://gatsby-starter-catalyst-sanity.netlify.app`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
+    siteUrl: `https://hopeful-newton-7a07f3.netlify.app/`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
     menuLinks: [
       {
         name: `Page 1`,
@@ -57,16 +62,16 @@ module.exports = {
       resolve: `gatsby-theme-catalyst-sanity`,
       options: {
         // Example for an env variable
-        // sanityProjectId: process.env.SANITY_PROJECT_ID,
-        // sanityDataset: process.env.SANITY_DATASET,
-        // sanityToken: process.env.SANITY_TOKEN,
+        sanityProjectId: process.env.SANITY_PROJECT_ID,
+        sanityDataset: process.env.SANITY_DATASET,
+        sanityToken: process.env.SANITY_TOKEN,
         //
         // Default options are:
         // sanityProjectId: "abc123" // Required
         // sanityDataset: "production"
         // sanityToken: null
-        // sanityWatchMode: true
-        // sanityOverlayDrafts: false // Token is required for this
+        sanityWatchMode: true,
+        sanityOverlayDrafts: true ,
         // sanityCreatePages: true
         // sanityCreatePosts: true
         // sanityCreatePostsList: true
